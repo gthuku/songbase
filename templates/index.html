@@ -1,0 +1,18 @@
+{% extends "home-base.html"%}
+
+{% block head %}
+{{super()}}
+<style media="screen">
+  h1 {
+    color: purple;
+  }
+</style>
+{% endblock %}
+
+{% block title %}
+Homepage
+{% endblock %}
+
+{% block page_content%}
+<h1>this is index with template reuse</h1>
+{% endblock %}
