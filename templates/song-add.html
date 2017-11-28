@@ -1,0 +1,29 @@
+{% extends "home-base.html"%}
+{% block title %}Add Songs{% endblock %}
+{% block page_content%}
+
+  <!-- Page Content -->
+  <div class="container">
+    <h1 class="mt-5"><i class="fa fa-user-circle-o" aria-hidden="true"></i> Add Song:</h1>
+    <form action="/song/add" method="post">
+      <div class="form-group">
+        <label>Song Name</label>
+        <input class="form-control" type="text" name="song name" placeholder="Name of the Song" required="true">
+      </div>
+      <div class="form-group">
+        <label>Song Year</label>
+        <textarea class="form-control" name="year" placeholder="Brief Introduction" required="true"></textarea>
+      </div>
+      <div class="form-group">
+        <label>Lyrics</label>
+        <textarea class="form-control" name="lyrics" placeholder="Brief Introduction" required="true"></textarea>
+      </div>
+      <div class="form-group">
+        <label>Artists Name</label>
+        <textarea class="form-control" name="artist_name" placeholder="Brief Introduction" required="true"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Add Song</button>
+    </form>
+  </div>
+
+{% endblock%}
